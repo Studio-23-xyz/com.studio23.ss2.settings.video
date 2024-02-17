@@ -1,0 +1,42 @@
+{
+  "api/Global.DisplayUI.html": {
+    "href": "api/Global.DisplayUI.html",
+    "title": "Class DisplayUI | |",
+    "keywords": "Class DisplayUI Namespace Global public class DisplayUI : MonoBehaviour Inheritance System.Object DisplayUI"
+  },
+  "api/Global.LoopedStepper.html": {
+    "href": "api/Global.LoopedStepper.html",
+    "title": "Class LoopedStepper | |",
+    "keywords": "Class LoopedStepper Namespace Global public class LoopedStepper : MonoBehaviour Inheritance System.Object LoopedStepper Methods InitializeData(IList, int) public void InitializeData(IList data, int selectIndex = 0) Parameters data IList selectIndex int Left() public void Left() Right() public void Right()"
+  },
+  "api/Global.html": {
+    "href": "api/Global.html",
+    "title": "Namespace | |",
+    "keywords": "Namespace Classes DisplayUI LoopedStepper"
+  },
+  "api/Studio23.SS2.Settings.Video.Core.DisplayController.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Core.DisplayController.html",
+    "title": "Class DisplayController | |",
+    "keywords": "Class DisplayController Namespace Studio23.SS2.Settings.Video.Core public class DisplayController : MonoBehaviour Inheritance System.Object DisplayController Methods ChangeFullScreenMode(FullScreenMode) Changes Full Screen Mode public void ChangeFullScreenMode(FullScreenMode fullScreenMode) Parameters fullScreenMode FullScreenMode ChangeResolution(Resolution) Changes The Resolution public void ChangeResolution(Resolution resolution) Parameters resolution Resolution ChangeShadowResolution(int) Change Shadow Resolution public void ChangeShadowResolution(int shadowResolution) Parameters shadowResolution int ChangeShadowType(int) Change Shadow Type public void ChangeShadowType(int shadowType) Parameters shadowType int ChangeVSync(int) Changes VSync. 0 = OFf, 1 = On (60FPS), 2 = Every 2nd V-Blank (30FPS) public void ChangeVSync(int count) Parameters count int GetFullScreenModes() Use this method to get all the Full Screen Modes to show in UI public FullScreenMode[] GetFullScreenModes() Returns FullScreenMode[] Array of Full Screen Mode struct by Unity GetSelectedResoltuonIndex() Returns the current selected resolution index. Might Need for UI public int GetSelectedResoltuonIndex() Returns int int GetShadowResolutions() Use this method to get all the Shadow ShadowResolution to show in UI public ShadowResolution[] GetShadowResolutions() Returns ShadowResolution[] Array of Shadow Resolution struct by Unity GetShadowType() Use this method to get all the Shadow ShadowQuality to show in UI public ShadowQuality[] GetShadowType() Returns ShadowQuality[] Array of Shadow ShadowQuality struct by Unity GetSupportedResolutions() Use this method to get supported resolutions to show in UI public Resolution[] GetSupportedResolutions() Returns Resolution[] Array of Resolution struct by Unity"
+  },
+  "api/Studio23.SS2.Settings.Video.Core.PostProcessController.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Core.PostProcessController.html",
+    "title": "Class PostProcessController | |",
+    "keywords": "Class PostProcessController Namespace Studio23.SS2.Settings.Video.Core public class PostProcessController : MonoBehaviour Inheritance System.Object PostProcessController Methods SetAmbientOcculsionState(bool) Enable Or Disable Ambient Occulsion public void SetAmbientOcculsionState(bool state) Parameters state bool SetBloomState(bool) Enable Or Disable Bloom public void SetBloomState(bool state) Parameters state bool"
+  },
+  "api/Studio23.SS2.Settings.Video.Core.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Core.html",
+    "title": "Namespace Studio23.SS2.Settings.Video.Core | |",
+    "keywords": "Namespace Studio23.SS2.Settings.Video.Core Classes DisplayController PostProcessController"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "| |",
+    "keywords": "This is the documentation for the Scripting APIs of this package."
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| |",
+    "keywords": "This page redirects to the manual."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "sitemap": {
+    "baseUrl": "https://studio-23-xyz.github.io/com.studio23.ss2.settings.video/"
+  },
+  "source_base_path": "/home/runner/work/com.studio23.ss2.settings.video/com.studio23.ss2.settings.video/Documentation~",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.DisplayUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.DisplayUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.LoopedStepper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.LoopedStepper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Core.DisplayController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Core.DisplayController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Core.PostProcessController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Core.PostProcessController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
