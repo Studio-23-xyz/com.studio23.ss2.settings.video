@@ -55,13 +55,59 @@ namespace Studio23.SS2.Settings.Video.Core
         }
 
 
-
         private void UpdateDisplay(Resolution resolution,FullScreenMode fullScreenMode)
         {
-            
             Screen.SetResolution(resolution.width, resolution.height,fullScreenMode);
         }
 
+        /// <summary>
+        /// Changes VSync. 0 = OFf, 1 = On (60FPS), 2 = Every 2nd V-Blank (30FPS)
+        /// </summary>
+        /// <param name="count"></param>
+        public void ChangeVSync(int count)
+        {
+            QualitySettings.vSyncCount = count;
+        }
+
+
+
+        /// <summary>
+        /// Use this method to get all the Shadow ShadowQuality to show in UI
+        /// </summary>
+        /// <returns>Array of Shadow ShadowQuality struct by Unity</returns>
+        public ShadowQuality[] GetShadowType()
+        {
+            return (ShadowQuality[])Enum.GetValues(typeof(ShadowQuality));
+        }
+
+
+        /// <summary>
+        /// Change Shadow Type
+        /// </summary>
+        /// <param name="shadowType"></param>
+        public void ChangeShadowType(int shadowType)
+        {
+            QualitySettings.shadows = (ShadowQuality)shadowType;
+        }
+
+        /// <summary>
+        /// Use this method to get all the Shadow ShadowResolution to show in UI
+        /// </summary>
+        /// <returns>Array of Shadow Resolution struct by Unity</returns>
+        public ShadowResolution[] GetShadowResolutions()
+        {
+            return (ShadowResolution[])Enum.GetValues(typeof(ShadowResolution));
+        }
+
+
+        /// <summary>
+        /// Change Shadow Resolution
+        /// </summary>
+        /// <param name="shadowResolution"></param>
+        public void ChangeShadowResolution(int shadowResolution)
+        {
+            QualitySettings.shadowResolution = (ShadowResolution)shadowResolution;
+        }
 
     }
 
