@@ -1,33 +1,53 @@
 {
-  "api/Global.DisplayUI.html": {
-    "href": "api/Global.DisplayUI.html",
-    "title": "Class DisplayUI | |",
-    "keywords": "Class DisplayUI Namespace Global public class DisplayUI : MonoBehaviour Inheritance System.Object DisplayUI"
-  },
   "api/Global.LoopedStepper.html": {
     "href": "api/Global.LoopedStepper.html",
     "title": "Class LoopedStepper | |",
-    "keywords": "Class LoopedStepper Namespace Global public class LoopedStepper : MonoBehaviour Inheritance System.Object LoopedStepper Methods InitializeData(IList, int) public void InitializeData(IList data, int selectIndex = 0) Parameters data IList selectIndex int Left() public void Left() Right() public void Right()"
+    "keywords": "Class LoopedStepper Namespace Global public class LoopedStepper : MonoBehaviour Inheritance object LoopedStepper Methods InitializeData(IList, int) public void InitializeData(IList data, int selectIndex = 0) Parameters data IList selectIndex int Left() public void Left() Right() public void Right()"
   },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | |",
-    "keywords": "Namespace Classes DisplayUI LoopedStepper"
+    "keywords": "Namespace Classes LoopedStepper"
   },
   "api/Studio23.SS2.Settings.Video.Core.DisplayController.html": {
     "href": "api/Studio23.SS2.Settings.Video.Core.DisplayController.html",
     "title": "Class DisplayController | |",
-    "keywords": "Class DisplayController Namespace Studio23.SS2.Settings.Video.Core public class DisplayController : MonoBehaviour Inheritance System.Object DisplayController Methods ChangeFullScreenMode(FullScreenMode) Changes Full Screen Mode public void ChangeFullScreenMode(FullScreenMode fullScreenMode) Parameters fullScreenMode FullScreenMode ChangeResolution(Resolution) Changes The Resolution public void ChangeResolution(Resolution resolution) Parameters resolution Resolution ChangeShadowResolution(int) Change Shadow Resolution public void ChangeShadowResolution(int shadowResolution) Parameters shadowResolution int ChangeShadowType(int) Change Shadow Type public void ChangeShadowType(int shadowType) Parameters shadowType int ChangeVSync(int) Changes VSync. 0 = OFf, 1 = On (60FPS), 2 = Every 2nd V-Blank (30FPS) public void ChangeVSync(int count) Parameters count int GetFullScreenModes() Use this method to get all the Full Screen Modes to show in UI public FullScreenMode[] GetFullScreenModes() Returns FullScreenMode[] Array of Full Screen Mode struct by Unity GetSelectedResoltuonIndex() Returns the current selected resolution index. Might Need for UI public int GetSelectedResoltuonIndex() Returns int int GetShadowResolutions() Use this method to get all the Shadow ShadowResolution to show in UI public ShadowResolution[] GetShadowResolutions() Returns ShadowResolution[] Array of Shadow Resolution struct by Unity GetShadowType() Use this method to get all the Shadow ShadowQuality to show in UI public ShadowQuality[] GetShadowType() Returns ShadowQuality[] Array of Shadow ShadowQuality struct by Unity GetSupportedResolutions() Use this method to get supported resolutions to show in UI public Resolution[] GetSupportedResolutions() Returns Resolution[] Array of Resolution struct by Unity"
+    "keywords": "Class DisplayController Namespace Studio23.SS2.Settings.Video.Core public class DisplayController : MonoBehaviour Inheritance object DisplayController Methods ChangeFullScreenMode(FullScreenMode) Changes Full Screen Mode public void ChangeFullScreenMode(FullScreenMode fullScreenMode) Parameters fullScreenMode FullScreenMode ChangeResolution(Resolution) Changes The Resolution public void ChangeResolution(Resolution resolution) Parameters resolution Resolution ChangeShadowResolution(int) Change Shadow Resolution public void ChangeShadowResolution(int shadowResolution) Parameters shadowResolution int ChangeShadowType(int) Change Shadow Type public void ChangeShadowType(int shadowType) Parameters shadowType int ChangeTextureQuality(int) Changes Texture Quality Settings while 0 is the highest and 3 is the lowest 0=full , 1=half , 2=quarter , 3=eighth public void ChangeTextureQuality(int quality) Parameters quality int ChangeVSync(int) Changes VSync. 0 = OFf, 1 = On (60FPS), 2 = Every 2nd V-Blank (30FPS) public void ChangeVSync(int count) Parameters count int GetFullScreenModes() Use this method to get all the Full Screen Modes to show in UI public FullScreenMode[] GetFullScreenModes() Returns FullScreenMode[] Array of Full Screen Mode struct by Unity GetSelectedResoltuonIndex() Returns the current selected resolution index. Might Need for UI public int GetSelectedResoltuonIndex() Returns int int GetShadowResolutions() Use this method to get all the Shadow ShadowResolution to show in UI public ShadowResolution[] GetShadowResolutions() Returns ShadowResolution[] Array of Shadow Resolution struct by Unity GetShadowType() Use this method to get all the Shadow ShadowQuality to show in UI public ShadowQuality[] GetShadowType() Returns ShadowQuality[] Array of Shadow ShadowQuality struct by Unity GetSupportedResolutions() Use this method to get supported resolutions to show in UI public Resolution[] GetSupportedResolutions() Returns Resolution[] Array of Resolution struct by Unity"
   },
   "api/Studio23.SS2.Settings.Video.Core.PostProcessController.html": {
     "href": "api/Studio23.SS2.Settings.Video.Core.PostProcessController.html",
     "title": "Class PostProcessController | |",
-    "keywords": "Class PostProcessController Namespace Studio23.SS2.Settings.Video.Core public class PostProcessController : MonoBehaviour Inheritance System.Object PostProcessController Methods SetAmbientOcculsionState(bool) Enable Or Disable Ambient Occulsion public void SetAmbientOcculsionState(bool state) Parameters state bool SetBloomState(bool) Enable Or Disable Bloom public void SetBloomState(bool state) Parameters state bool"
+    "keywords": "Class PostProcessController Namespace Studio23.SS2.Settings.Video.Core public class PostProcessController : MonoBehaviour Inheritance object PostProcessController Methods SetAmbientOcculsionState(bool) Enable Or Disable Ambient Occulsion public void SetAmbientOcculsionState(bool state) Parameters state bool SetBloomState(bool) Enable Or Disable Bloom public void SetBloomState(bool state) Parameters state bool"
   },
   "api/Studio23.SS2.Settings.Video.Core.html": {
     "href": "api/Studio23.SS2.Settings.Video.Core.html",
     "title": "Namespace Studio23.SS2.Settings.Video.Core | |",
     "keywords": "Namespace Studio23.SS2.Settings.Video.Core Classes DisplayController PostProcessController"
+  },
+  "api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html",
+    "title": "Class VideoSettingsData | |",
+    "keywords": "Class VideoSettingsData Namespace Studio23.SS2.Settings.Video.Data [Serializable] public class VideoSettingsData Inheritance object VideoSettingsData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields EnableAmbientOcculsion public bool EnableAmbientOcculsion Field Value bool EnableBloom public bool EnableBloom Field Value bool ShadowResolutionIndex public int ShadowResolutionIndex Field Value int ShadowType public int ShadowType Field Value int TextureQualityIndex public int TextureQualityIndex Field Value int VsyncCount public int VsyncCount Field Value int"
+  },
+  "api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html",
+    "title": "Class VideoSettingsPreset | |",
+    "keywords": "Class VideoSettingsPreset Namespace Studio23.SS2.Settings.Video.Data public class VideoSettingsPreset : ScriptableObject Inheritance object VideoSettingsPreset Fields Data public VideoSettingsData Data Field Value VideoSettingsData PresetName public string PresetName Field Value string"
+  },
+  "api/Studio23.SS2.Settings.Video.Data.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Data.html",
+    "title": "Namespace Studio23.SS2.Settings.Video.Data | |",
+    "keywords": "Namespace Studio23.SS2.Settings.Video.Data Classes VideoSettingsData VideoSettingsPreset"
+  },
+  "api/Studio23.SS2.Settings.Video.Samples.DisplayUI.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Samples.DisplayUI.html",
+    "title": "Class DisplayUI | |",
+    "keywords": "Class DisplayUI Namespace Studio23.SS2.Settings.Video.Samples public class DisplayUI : MonoBehaviour Inheritance object DisplayUI"
+  },
+  "api/Studio23.SS2.Settings.Video.Samples.html": {
+    "href": "api/Studio23.SS2.Settings.Video.Samples.html",
+    "title": "Namespace Studio23.SS2.Settings.Video.Samples | |",
+    "keywords": "Namespace Studio23.SS2.Settings.Video.Samples Classes DisplayUI"
   },
   "api/index.html": {
     "href": "api/index.html",

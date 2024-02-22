@@ -15,16 +15,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Global.DisplayUI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Global.DisplayUI.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Global.LoopedStepper.yml",
       "output": {
         ".html": {
@@ -69,6 +59,56 @@
       "output": {
         ".html": {
           "relative_path": "api/Studio23.SS2.Settings.Video.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Samples.DisplayUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Samples.DisplayUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Studio23.SS2.Settings.Video.Samples.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Studio23.SS2.Settings.Video.Samples.html"
         }
       },
       "version": ""

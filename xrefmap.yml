@@ -4,12 +4,6 @@ references:
 - uid: Global
   name: ''
   href: api/Global.html
-- uid: Global.DisplayUI
-  name: DisplayUI
-  href: api/Global.DisplayUI.html
-  commentId: T:Global.DisplayUI
-  fullName: DisplayUI
-  nameWithType: DisplayUI
 - uid: Global.LoopedStepper
   name: LoopedStepper
   href: api/Global.LoopedStepper.html
@@ -128,6 +122,22 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeShadowType
   nameWithType: DisplayController.ChangeShadowType
+- uid: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality(System.Int32)
+  name: ChangeTextureQuality(int)
+  href: api/Studio23.SS2.Settings.Video.Core.DisplayController.html#Studio23_SS2_Settings_Video_Core_DisplayController_ChangeTextureQuality_System_Int32_
+  commentId: M:Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality(System.Int32)
+  name.vb: ChangeTextureQuality(Integer)
+  fullName: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality(int)
+  fullName.vb: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality(Integer)
+  nameWithType: DisplayController.ChangeTextureQuality(int)
+  nameWithType.vb: DisplayController.ChangeTextureQuality(Integer)
+- uid: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality*
+  name: ChangeTextureQuality
+  href: api/Studio23.SS2.Settings.Video.Core.DisplayController.html#Studio23_SS2_Settings_Video_Core_DisplayController_ChangeTextureQuality_
+  commentId: Overload:Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality
+  isSpec: "True"
+  fullName: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeTextureQuality
+  nameWithType: DisplayController.ChangeTextureQuality
 - uid: Studio23.SS2.Settings.Video.Core.DisplayController.ChangeVSync(System.Int32)
   name: ChangeVSync(int)
   href: api/Studio23.SS2.Settings.Video.Core.DisplayController.html#Studio23_SS2_Settings_Video_Core_DisplayController_ChangeVSync_System_Int32_
@@ -247,3 +257,81 @@ references:
   isSpec: "True"
   fullName: Studio23.SS2.Settings.Video.Core.PostProcessController.SetBloomState
   nameWithType: PostProcessController.SetBloomState
+- uid: Studio23.SS2.Settings.Video.Data
+  name: Studio23.SS2.Settings.Video.Data
+  href: api/Studio23.SS2.Settings.Video.Data.html
+  commentId: N:Studio23.SS2.Settings.Video.Data
+  fullName: Studio23.SS2.Settings.Video.Data
+  nameWithType: Studio23.SS2.Settings.Video.Data
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData
+  name: VideoSettingsData
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html
+  commentId: T:Studio23.SS2.Settings.Video.Data.VideoSettingsData
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData
+  nameWithType: VideoSettingsData
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableAmbientOcculsion
+  name: EnableAmbientOcculsion
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_EnableAmbientOcculsion
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableAmbientOcculsion
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableAmbientOcculsion
+  nameWithType: VideoSettingsData.EnableAmbientOcculsion
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableBloom
+  name: EnableBloom
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_EnableBloom
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableBloom
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.EnableBloom
+  nameWithType: VideoSettingsData.EnableBloom
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowResolutionIndex
+  name: ShadowResolutionIndex
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_ShadowResolutionIndex
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowResolutionIndex
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowResolutionIndex
+  nameWithType: VideoSettingsData.ShadowResolutionIndex
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowType
+  name: ShadowType
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_ShadowType
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowType
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.ShadowType
+  nameWithType: VideoSettingsData.ShadowType
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.TextureQualityIndex
+  name: TextureQualityIndex
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_TextureQualityIndex
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.TextureQualityIndex
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.TextureQualityIndex
+  nameWithType: VideoSettingsData.TextureQualityIndex
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsData.VsyncCount
+  name: VsyncCount
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsData.html#Studio23_SS2_Settings_Video_Data_VideoSettingsData_VsyncCount
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsData.VsyncCount
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsData.VsyncCount
+  nameWithType: VideoSettingsData.VsyncCount
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset
+  name: VideoSettingsPreset
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html
+  commentId: T:Studio23.SS2.Settings.Video.Data.VideoSettingsPreset
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset
+  nameWithType: VideoSettingsPreset
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.Data
+  name: Data
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html#Studio23_SS2_Settings_Video_Data_VideoSettingsPreset_Data
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.Data
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.Data
+  nameWithType: VideoSettingsPreset.Data
+- uid: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.PresetName
+  name: PresetName
+  href: api/Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.html#Studio23_SS2_Settings_Video_Data_VideoSettingsPreset_PresetName
+  commentId: F:Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.PresetName
+  fullName: Studio23.SS2.Settings.Video.Data.VideoSettingsPreset.PresetName
+  nameWithType: VideoSettingsPreset.PresetName
+- uid: Studio23.SS2.Settings.Video.Samples
+  name: Studio23.SS2.Settings.Video.Samples
+  href: api/Studio23.SS2.Settings.Video.Samples.html
+  commentId: N:Studio23.SS2.Settings.Video.Samples
+  fullName: Studio23.SS2.Settings.Video.Samples
+  nameWithType: Studio23.SS2.Settings.Video.Samples
+- uid: Studio23.SS2.Settings.Video.Samples.DisplayUI
+  name: DisplayUI
+  href: api/Studio23.SS2.Settings.Video.Samples.DisplayUI.html
+  commentId: T:Studio23.SS2.Settings.Video.Samples.DisplayUI
+  fullName: Studio23.SS2.Settings.Video.Samples.DisplayUI
+  nameWithType: DisplayUI
