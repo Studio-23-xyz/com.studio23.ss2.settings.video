@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 namespace Studio23.SS2.Settings.Video.Core
@@ -12,7 +11,7 @@ namespace Studio23.SS2.Settings.Video.Core
         /// <param name="state"></param>
         public void SetBloomState(bool state)
         {
-
+            
         }
 
         /// <summary>
@@ -23,6 +22,10 @@ namespace Studio23.SS2.Settings.Video.Core
         {
 
         }
+
+
+
+
 
     }
 }

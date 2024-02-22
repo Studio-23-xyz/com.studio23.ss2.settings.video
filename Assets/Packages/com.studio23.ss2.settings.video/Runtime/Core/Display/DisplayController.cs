@@ -55,6 +55,17 @@ namespace Studio23.SS2.Settings.Video.Core
         }
 
 
+        /// <summary>
+        /// Changes Texture Quality Settings while 0 is the highest and 3 is the lowest
+        /// 0=full , 1=half , 2=quarter , 3=eighth
+        /// </summary>
+        /// <param name="quality"></param>
+        public void ChangeTextureQuality(int quality)
+        {
+            QualitySettings.globalTextureMipmapLimit = quality;
+        }
+
+
         private void UpdateDisplay(Resolution resolution,FullScreenMode fullScreenMode)
         {
             Screen.SetResolution(resolution.width, resolution.height,fullScreenMode);
