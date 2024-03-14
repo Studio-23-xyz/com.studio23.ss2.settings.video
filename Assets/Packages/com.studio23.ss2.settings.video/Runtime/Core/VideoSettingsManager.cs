@@ -14,6 +14,7 @@ namespace Studio23.SS2.Settings.Video.Core
 
         [SerializeField] private Volume _globalVolume;
         [SerializeField] private GraphicsConfigurationBase _postProcessConfiguration;
+        [SerializeField] private GraphicsConfigurationBase _defaultPostProcessConfiguration;
 
         private void Awake()
         {
@@ -36,8 +37,15 @@ namespace Studio23.SS2.Settings.Video.Core
         {
             if(_globalVolume == null)
                 _globalVolume = GameObject.FindGameObjectWithTag("GlobalVolume").GetComponent<Volume>();
-            if (_postProcessConfiguration == null)
-                _postProcessConfiguration = Resources.Load<GraphicsConfigurationBase>("Settings/Video/PostProcess/DummyPostProcess");
+
+            _defaultPostProcessConfiguration = Resources.Load<GraphicsConfigurationBase>("Settings/Video/PostProcess/DummyPostProcess");
+            _postProcessConfiguration = Resources.Load<GraphicsConfigurationBase>("Settings/Video/PostProcess/PostProcess");
+
+            _postProcessConfiguration = _postProcessConfiguration == null
+                ? _defaultPostProcessConfiguration
+                : _postProcessConfiguration;
+
+
             DisplayController.Initialize(_postProcessConfiguration,_globalVolume);
             GraphicsController.Initialize(_postProcessConfiguration,_globalVolume);
         }
