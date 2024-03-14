@@ -35,8 +35,8 @@ jobs:
         uses: sator-imaging/docfx-pages@v1
         id: deployment
         with:
-          app_name: 'Save System For Unity'
-          site_title: 'Save System For Unity'
+          app_name: 'Video Settings For Unity'
+          site_title: 'Video Settings For Unity'
           site_footer: '<big>&times; Is HTML accepted?</big>'
           class_members: 'separatePages'
           google_analytics: ''
