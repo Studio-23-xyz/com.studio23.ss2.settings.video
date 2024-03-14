@@ -1,11 +1,21 @@
+using Studio23.SS2.Settings.Video.Data;
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 namespace Studio23.SS2.Settings.Video.Core
 {
     public class DisplayController : MonoBehaviour
     {
+
+        private GraphicsConfigurationBase _postProcessData;
+
+        public void Initialize(GraphicsConfigurationBase graphicsConfiguration, Volume volume)
+        {
+            _postProcessData = graphicsConfiguration;
+            _postProcessData.Initialize(volume);
+        }
 
 
         /// <summary>
@@ -21,9 +31,18 @@ namespace Studio23.SS2.Settings.Video.Core
         /// Returns the current selected resolution index. Might Need for UI
         /// </summary>
         /// <returns>int</returns>
-        public int GetSelectedResoltuonIndex()
+        public int GetSelectedResolutionIndex()
         {
             return Screen.resolutions.ToList().IndexOf(Screen.currentResolution);
+        }
+
+        /// <summary>
+        /// Changes The Resolution
+        /// </summary>
+        /// <param name="resolution"></param>
+        public void ChangeResolution(int resolutionIndex)
+        {
+            UpdateDisplay(GetSupportedResolutions()[resolutionIndex], Screen.fullScreenMode);
         }
 
         /// <summary>
@@ -40,29 +59,9 @@ namespace Studio23.SS2.Settings.Video.Core
         /// Changes Full Screen Mode
         /// </summary>
         /// <param name="fullScreenMode"></param>
-        public void ChangeFullScreenMode(FullScreenMode fullScreenMode)
+        public void ChangeFullScreenMode(int fullScreenModeIndex)
         {
-            UpdateDisplay(Screen.currentResolution, fullScreenMode);
-        }
-
-        /// <summary>
-        /// Changes The Resolution
-        /// </summary>
-        /// <param name="resolution"></param>
-        public void ChangeResolution(Resolution resolution)
-        {
-            UpdateDisplay(resolution, Screen.fullScreenMode);
-        }
-
-
-        /// <summary>
-        /// Changes Texture Quality Settings while 0 is the highest and 3 is the lowest
-        /// 0=full , 1=half , 2=quarter , 3=eighth
-        /// </summary>
-        /// <param name="quality"></param>
-        public void ChangeTextureQuality(int quality)
-        {
-            QualitySettings.globalTextureMipmapLimit = quality;
+            UpdateDisplay(Screen.currentResolution, GetFullScreenModes()[fullScreenModeIndex]);
         }
 
 
@@ -81,43 +80,13 @@ namespace Studio23.SS2.Settings.Video.Core
         }
 
 
-
         /// <summary>
-        /// Use this method to get all the Shadow ShadowQuality to show in UI
+        /// Update Brightness
         /// </summary>
-        /// <returns>Array of Shadow ShadowQuality struct by Unity</returns>
-        public ShadowQuality[] GetShadowType()
+        /// <param name="brightnessValue"></param>
+        public void SetBrightness(float brightnessValue)
         {
-            return (ShadowQuality[])Enum.GetValues(typeof(ShadowQuality));
-        }
-
-
-        /// <summary>
-        /// Change Shadow Type
-        /// </summary>
-        /// <param name="shadowType"></param>
-        public void ChangeShadowType(int shadowType)
-        {
-            QualitySettings.shadows = (ShadowQuality)shadowType;
-        }
-
-        /// <summary>
-        /// Use this method to get all the Shadow ShadowResolution to show in UI
-        /// </summary>
-        /// <returns>Array of Shadow Resolution struct by Unity</returns>
-        public ShadowResolution[] GetShadowResolutions()
-        {
-            return (ShadowResolution[])Enum.GetValues(typeof(ShadowResolution));
-        }
-
-
-        /// <summary>
-        /// Change Shadow Resolution
-        /// </summary>
-        /// <param name="shadowResolution"></param>
-        public void ChangeShadowResolution(int shadowResolution)
-        {
-            QualitySettings.shadowResolution = (ShadowResolution)shadowResolution;
+            _postProcessData.SetBrightness(brightnessValue);
         }
 
     }

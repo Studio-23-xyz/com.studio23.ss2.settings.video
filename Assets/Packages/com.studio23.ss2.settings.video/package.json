@@ -1,10 +1,10 @@
 {
   "name": "com.studio23.ss2.settings.video",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "displayName": "Video Settings System",
   "description": "Video Settings System is a framework to configure Video Setings of your games. Render Pipeline Will be installed as dependencies",
   "unity": "2022.3",
-  "unityRelease": "9f1",
+  "unityRelease": "14f1",
   "documentationUrl": "https://studio-23-xyz.github.io/com.studio23.ss2.settings.video/manual/",
   "changelogUrl": "https://studio-23-xyz.github.io/com.studio23.ss2.settings.video/changelog/CHANGELOG.html",
   "licensesUrl": "https://studio-23-xyz.github.io/com.studio23.ss2.settings.video/license/LICENSE.html",
