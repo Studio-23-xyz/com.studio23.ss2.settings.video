@@ -6,7 +6,7 @@ namespace Studio23.SS2.Settings.Video.Data
 {
     public abstract class GraphicsConfigurationBase : ScriptableObject
     {
-        private VolumeProfile _volume;
+        protected VolumeProfile CurrentVolumeProfile;
 
 
         /// <summary>
@@ -33,5 +33,10 @@ namespace Studio23.SS2.Settings.Video.Data
         /// <param name="brightnessValue"></param>
         public abstract void SetBrightness(float brightnessValue);
 
+
+        /// <summary>
+        /// Update Ambient Occulsion Render Feature when graphics changes
+        /// </summary>
+        public abstract void UpdateAmbientOcclusionRenderFeature();
     }
 }

@@ -25,5 +25,10 @@ namespace Studio23.SS2.Settings.Video.Data
         {
             Debug.Log($"{name}: <color=green>Updated brightness value</color>");
         }
+
+        public override void UpdateAmbientOcclusionRenderFeature()
+        {
+            Debug.Log($"{name}: <color=green>Updated AO value</color>");
+        }
     }
 }
