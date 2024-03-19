@@ -535,10 +535,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a62d2e5946a0b746819d40b500b94b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayText: {fileID: 3298616601501846536}
+  _displayText: {fileID: 3298616601501846536}
   _leftButton: {fileID: 8868444984766722786}
   _rightButton: {fileID: 7926679540898928868}
-  _isLive: 1
+  _makeUpdateImmedietly: 0
   _selectedIndex: 0
   SelectedIndexUpdated:
     m_PersistentCalls:

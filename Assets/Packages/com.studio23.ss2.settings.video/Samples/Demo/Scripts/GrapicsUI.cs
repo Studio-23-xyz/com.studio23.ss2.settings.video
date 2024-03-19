@@ -14,30 +14,33 @@ public class GrapicsUI : MonoBehaviour
     [SerializeField] private LoopedStepper _bloom;
     [SerializeField] private LoopedStepper _ambientOcclusion;
 
+    private GraphicsController _graphicsController;
+
     void Start()
     {
+        _graphicsController = VideoSettingsManager.Instance.GraphicsController;
         InitializeUI();
     }
 
     private void InitializeUI()
     {
         _preset.InitializeData(new List<string>() { "High", "Medium", "Low", "Custom" });
-        _preset.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.ChangeQualitySetting);
+        _preset.SelectedIndexUpdated.AddListener(_graphicsController.ChangeQualitySetting);
 
-        _shadowStepper.InitializeData(VideoSettingsManager.Instance.GraphicsController.GetShadowType());
-        _shadowStepper.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.ChangeShadowType);
+        _shadowStepper.InitializeData(_graphicsController.GetShadowType());
+        _shadowStepper.SelectedIndexUpdated.AddListener(_graphicsController.ChangeShadowType);
 
-        _shadowResolution.InitializeData(VideoSettingsManager.Instance.GraphicsController.GetShadowResolutions());
-        _shadowResolution.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.ChangeShadowResolution);
+        _shadowResolution.InitializeData(_graphicsController.GetShadowResolutions());
+        _shadowResolution.SelectedIndexUpdated.AddListener(_graphicsController.ChangeShadowResolution);
 
         _textureQuality.InitializeData(new List<string>() { "Full", "Half", "Quarter", "Eighth" });
-        _textureQuality.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.ChangeTextureQuality);
+        _textureQuality.SelectedIndexUpdated.AddListener(_graphicsController.ChangeTextureQuality);
 
         _bloom.InitializeData(new List<string>() { "Off", "On" });
-        _bloom.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.SetBloomState);
+        _bloom.SelectedIndexUpdated.AddListener(_graphicsController.SetBloomState);
 
         _ambientOcclusion.InitializeData(new List<string>() { "Off", "On" });
-        _ambientOcclusion.SelectedIndexUpdated.AddListener(VideoSettingsManager.Instance.GraphicsController.SetAmbientOcculsionState);
+        _ambientOcclusion.SelectedIndexUpdated.AddListener(_graphicsController.SetAmbientOcculsionState);
 
     }
 }

@@ -9,34 +9,34 @@ namespace Studio23.SS2.Settings.Video.Samples
 {
     public class LoopedStepper : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI DisplayText;
+        [SerializeField] private TextMeshProUGUI _displayText;
         [SerializeField] private Button _leftButton;
         [SerializeField] private Button _rightButton;
-        [SerializeField] private bool _isLive;
+        [SerializeField] private bool _makeUpdateImmedietly;
         [SerializeField] private int _selectedIndex;
         private IList _data;
         public UnityEvent<int> SelectedIndexUpdated;
 
         private void Start()
         {
-            _leftButton.onClick.AddListener(Left);
-            _rightButton.onClick.AddListener(Right);
+            _leftButton.onClick.AddListener(DecreaseIndex);
+            _rightButton.onClick.AddListener(IncreaseIndex);
         }
 
         public void InitializeData(IList data, int selectIndex = 0)
         {
             _selectedIndex = selectIndex;
             _data = data;
-            Apply(false);
+            SelectedIndexUpdateAction(false);
         }
 
 
         private void ShowText()
         {
-            DisplayText.text = _data[_selectedIndex].ToString();
+            _displayText.text = _data[_selectedIndex].ToString();
         }
 
-        public void Right()
+        public void IncreaseIndex()
         {
             if (_selectedIndex < _data.Count - 1)
             {
@@ -46,12 +46,11 @@ namespace Studio23.SS2.Settings.Video.Samples
             {
                 _selectedIndex = 0;
             }
-
-            Apply();
+            SelectedIndexUpdateAction();
         }
 
 
-        public void Left()
+        public void DecreaseIndex()
         {
             if (_selectedIndex > 0)
             {
@@ -61,14 +60,14 @@ namespace Studio23.SS2.Settings.Video.Samples
             {
                 _selectedIndex = _data.Count - 1;
             }
-
-            Apply();
+            SelectedIndexUpdateAction();
         }
 
-        public void Apply(bool checkLiveStatus = true)
+        public void SelectedIndexUpdateAction(bool checkLiveStatus = true)
         {
             ShowText();
-            if (!_isLive) return;
+            if(checkLiveStatus)
+                if (!_makeUpdateImmedietly) return;
             ApplyAction();
         }
 

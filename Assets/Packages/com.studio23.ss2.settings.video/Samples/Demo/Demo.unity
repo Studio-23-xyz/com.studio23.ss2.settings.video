@@ -158,6 +158,7 @@ MonoBehaviour:
   GraphicsController: {fileID: 82560011}
   _globalVolume: {fileID: 572215337}
   _postProcessConfiguration: {fileID: 11400000, guid: 44358babd9efc5c45af951e46f2a9256, type: 2}
+  _defaultPostProcessConfiguration: {fileID: 11400000, guid: 44358babd9efc5c45af951e46f2a9256, type: 2}
 --- !u!4 &82560010
 Transform:
   m_ObjectHideFlags: 0
@@ -1565,7 +1566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d0323071322004fb97a38df8971571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Resolutionstepper: {fileID: 1326746740}
+  _resolutionstepper: {fileID: 0}
   _displayModeStepper: {fileID: 1056903256}
   _vSyncStepper: {fileID: 1980207116}
 --- !u!114 &1213602292
@@ -1734,17 +1735,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1326746740 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6586901114781380708, guid: 0eda4e44dc317a1439fe0e0d404382fe, type: 3}
-  m_PrefabInstance: {fileID: 1060154010}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a62d2e5946a0b746819d40b500b94b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1477756931 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 537321029407563225, guid: 0eda4e44dc317a1439fe0e0d404382fe, type: 3}
