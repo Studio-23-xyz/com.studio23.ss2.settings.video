@@ -33,10 +33,16 @@ namespace Studio23.SS2.Settings.Video.Data
         /// <param name="brightnessValue"></param>
         public abstract void SetBrightness(float brightnessValue);
 
+        /// <summary>
+        /// Update Render Scale
+        /// </summary>
+        /// <param name="scaleValue"></param>
+        public abstract void SetRenderScale(float scaleValue);
+
 
         /// <summary>
-        /// Update Ambient Occulsion Render Feature when graphics changes
+        /// Update Update PipelineRender Asset when graphics changes
         /// </summary>
-        public abstract void UpdateAmbientOcclusionRenderFeature();
+        public abstract void UpdatePipelineRenderAsset();
     }
 }

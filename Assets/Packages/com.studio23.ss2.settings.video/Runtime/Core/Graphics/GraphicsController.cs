@@ -90,7 +90,7 @@ namespace Studio23.SS2.Settings.Video.Core
         public void ChangeQualitySetting(int qualitySetting)
         {
             QualitySettings.SetQualityLevel(qualitySetting, true);
-            _postProcessData.UpdateAmbientOcclusionRenderFeature();
+            _postProcessData.UpdatePipelineRenderAsset();
         }
     }
 }
