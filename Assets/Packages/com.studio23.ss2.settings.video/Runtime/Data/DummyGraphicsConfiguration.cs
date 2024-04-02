@@ -26,9 +26,15 @@ namespace Studio23.SS2.Settings.Video.Data
             Debug.Log($"{name}: <color=green>Updated brightness value</color>");
         }
 
-        public override void UpdateAmbientOcclusionRenderFeature()
+        public override void SetRenderScale(float scaleValue)
         {
-            Debug.Log($"{name}: <color=green>Updated AO value</color>");
+            Debug.Log($"{name}: <color=green>Updated render scale value</color>");
         }
+
+        public override void UpdatePipelineRenderAsset()
+        {
+            Debug.Log($"{name}: <color=green>Updated RenderPipeline Assets value</color>");
+        }
+
     }
 }
