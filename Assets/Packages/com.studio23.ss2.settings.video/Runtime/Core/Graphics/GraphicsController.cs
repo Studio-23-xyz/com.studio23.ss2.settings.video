@@ -9,11 +9,18 @@ namespace Studio23.SS2.Settings.Video.Core
     {
         private GraphicsConfigurationBase _postProcessData;
 
-        public void Initialize(GraphicsConfigurationBase graphicsConfiguration,Volume volume)
+        public void Initialize(GraphicsConfigurationBase graphicsConfiguration)
         {
             _postProcessData = graphicsConfiguration;
-            _postProcessData.Initialize(volume);
         }
+
+
+        public void ApplySettings(VideoSettingsData data)
+        {
+            SetAmbientOcculsionState(data.AmbientOcclusionState);
+            SetBloomState(data.BloomState);
+        }
+
 
         /// <summary>
         /// Enable Or Disable Bloom

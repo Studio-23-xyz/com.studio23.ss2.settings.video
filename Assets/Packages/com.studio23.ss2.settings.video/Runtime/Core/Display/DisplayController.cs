@@ -8,13 +8,21 @@ namespace Studio23.SS2.Settings.Video.Core
 {
     public class DisplayController : MonoBehaviour
     {
-
         private GraphicsConfigurationBase _postProcessData;
+        
 
-        public void Initialize(GraphicsConfigurationBase graphicsConfiguration, Volume volume)
+        public void Initialize(GraphicsConfigurationBase graphicsConfiguration)
         {
             _postProcessData = graphicsConfiguration;
-            _postProcessData.Initialize(volume);
+        }
+
+        public void ApplySettings(VideoSettingsData data)
+        {
+            SetRenderScale(data.RenderScale);
+            ChangeResolution(data.ResolutionIndex);
+            ChangeVSync(data.VSyncCount);
+            SetBrightness(data.BrightnessLevel);
+            ChangeFullScreenMode(data.ScreenModeIndex);
         }
 
 
@@ -87,6 +95,15 @@ namespace Studio23.SS2.Settings.Video.Core
         public void SetBrightness(float brightnessValue)
         {
             _postProcessData.SetBrightness(brightnessValue);
+        }
+
+        /// <summary>
+        /// Update Render Scale
+        /// </summary>
+        /// <param name="scaleValue"></param>
+        public void SetRenderScale(float scaleValue)
+        {
+            _postProcessData.SetRenderScale(scaleValue);
         }
 
     }
