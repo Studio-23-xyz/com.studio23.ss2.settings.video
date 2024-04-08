@@ -16,6 +16,7 @@ namespace Studio23.SS2.Settings.Video.Core
         [SerializeField] private GraphicsConfigurationBase _postProcessConfiguration;
         [SerializeField] private GraphicsConfigurationBase _defaultPostProcessConfiguration;
 
+
         private void Awake()
         {
             if (Instance == null)
@@ -25,11 +26,6 @@ namespace Studio23.SS2.Settings.Video.Core
             }
             else 
                 Destroy(this);
-        }
-
-        private void Start()
-        {
-            Initialize();
         }
 
 
@@ -45,11 +41,9 @@ namespace Studio23.SS2.Settings.Video.Core
                 ? _defaultPostProcessConfiguration
                 : _postProcessConfiguration;
 
-
-            DisplayController.Initialize(_postProcessConfiguration,_globalVolume);
-            GraphicsController.Initialize(_postProcessConfiguration,_globalVolume);
+            DisplayController.Initialize(_postProcessConfiguration);
+            GraphicsController.Initialize(_postProcessConfiguration);
+            _postProcessConfiguration.Initialize(_globalVolume);
         }
-
-
     }
 }

@@ -8,7 +8,6 @@ namespace Studio23.SS2.Settings.Video.Data
     {
         protected VolumeProfile CurrentVolumeProfile;
 
-
         /// <summary>
         ///Initialize volume profile to change settings 
         /// </summary>
