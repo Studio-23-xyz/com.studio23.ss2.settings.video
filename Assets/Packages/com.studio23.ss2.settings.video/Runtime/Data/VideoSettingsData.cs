@@ -19,6 +19,7 @@ namespace Studio23.SS2.Settings.Video.Data
         public int BloomState;
         public int AmbientOcclusionState;
 
+        public VideoSettingsData() { }
 
         public VideoSettingsData(int screenModeIndex, int resolutionIndex, float renderScale, float brightnessLevel, int vSyncCount, int bloomState, int ambientOcclusionState)
         {
