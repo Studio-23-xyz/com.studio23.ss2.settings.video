@@ -1,4 +1,5 @@
 using System;
+using Newtonsoft.Json;
 using Studio23.SS2.Settings.Video.Core;
 using UnityEngine;
 
@@ -11,7 +12,11 @@ namespace Studio23.SS2.Settings.Video.Data
         [Header("Display")]
         public int ScreenModeIndex;
         public int ResolutionIndex;
+        [JsonIgnore] public float MinRenderScale;
+        [JsonIgnore] public float MaxRenderScale;
         public float RenderScale;
+        [JsonIgnore] public float MinBrightnessLevel;
+        [JsonIgnore] public float MaxBrightnessLevel;
         public float BrightnessLevel;
         public int VSyncCount;
 
