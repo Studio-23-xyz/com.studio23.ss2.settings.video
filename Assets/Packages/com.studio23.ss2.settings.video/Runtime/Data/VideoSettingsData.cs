@@ -1,6 +1,4 @@
 using System;
-using Newtonsoft.Json;
-using Studio23.SS2.Settings.Video.Core;
 using UnityEngine;
 
 namespace Studio23.SS2.Settings.Video.Data
@@ -12,11 +10,11 @@ namespace Studio23.SS2.Settings.Video.Data
         [Header("Display")]
         public int ScreenModeIndex;
         public int ResolutionIndex;
-        [JsonIgnore] public float MinRenderScale;
-        [JsonIgnore] public float MaxRenderScale;
+        public float MinRenderScale;
+        public float MaxRenderScale;
         public float RenderScale;
-        [JsonIgnore] public float MinBrightnessLevel;
-        [JsonIgnore] public float MaxBrightnessLevel;
+        public float MinBrightnessLevel;
+        public float MaxBrightnessLevel;
         public float BrightnessLevel;
         public int VSyncCount;
 
@@ -26,7 +24,7 @@ namespace Studio23.SS2.Settings.Video.Data
 
         public VideoSettingsData() { }
 
-        public VideoSettingsData(int screenModeIndex, int resolutionIndex, float renderScale, float brightnessLevel, int vSyncCount, int bloomState, int ambientOcclusionState)
+        public VideoSettingsData(int screenModeIndex, int resolutionIndex,float minRender, float maxRender, float renderScale, float minBrightness, float maxBrightness, float brightnessLevel, int vSyncCount, int bloomState, int ambientOcclusionState)
         {
             ScreenModeIndex = screenModeIndex;
             ResolutionIndex = resolutionIndex;
@@ -35,13 +33,22 @@ namespace Studio23.SS2.Settings.Video.Data
             VSyncCount = vSyncCount;
             BloomState = bloomState;
             AmbientOcclusionState = ambientOcclusionState;
+
+            MinRenderScale = minRender;
+            MaxRenderScale = maxRender;
+            MinBrightnessLevel = minBrightness;
+            MaxBrightnessLevel = maxBrightness;
         }
 
         public VideoSettingsData(VideoSettingsData data)
         {
             ScreenModeIndex = data.ScreenModeIndex;
             ResolutionIndex = data.ResolutionIndex;
+            MinRenderScale = data.MinRenderScale;
+            MaxRenderScale = data.MaxRenderScale;
             RenderScale = data.RenderScale;
+            MinBrightnessLevel = data.MinBrightnessLevel;
+            MaxBrightnessLevel = data.MaxBrightnessLevel;
             BrightnessLevel = data.BrightnessLevel;
             VSyncCount = data.VSyncCount;
             BloomState = data.BloomState;

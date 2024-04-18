@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -201,8 +201,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '>'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -335,8 +335,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 7c360b0da756c094d94191e3fe8245e4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 8822283108414144703}
   - component: {fileID: 8556345198377388147}
   - component: {fileID: 6798072219028478055}
-  - component: {fileID: 6586901114781380708}
+  - component: {fileID: 6724539715752649100}
   m_Layer: 5
   m_Name: LoopedStepper
   m_TagString: Untagged
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 2
---- !u!114 &6586901114781380708
+--- !u!114 &6724539715752649100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -532,13 +532,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5092622702290540653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a62d2e5946a0b746819d40b500b94b9, type: 3}
+  m_Script: {fileID: 11500000, guid: f37ad8f2f81ba584d986501d779226c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _displayText: {fileID: 3298616601501846536}
   _leftButton: {fileID: 8868444984766722786}
   _rightButton: {fileID: 7926679540898928868}
-  _makeUpdateImmedietly: 0
+  _makeUpdateImmedietly: 1
   _selectedIndex: 0
   SelectedIndexUpdated:
     m_PersistentCalls:
