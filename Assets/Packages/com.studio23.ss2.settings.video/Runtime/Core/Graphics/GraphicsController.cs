@@ -1,7 +1,7 @@
 using Studio23.SS2.Settings.Video.Data;
 using System;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace Studio23.SS2.Settings.Video.Core
 {
@@ -17,8 +17,12 @@ namespace Studio23.SS2.Settings.Video.Core
 
         public void ApplySettings(VideoSettingsData data)
         {
+            ChangeQualitySetting(data.CurrentQualitySettingIndex);
             SetAmbientOcculsionState(data.AmbientOcclusionState);
             SetBloomState(data.BloomState);
+            ChangeTextureQuality(data.MaxTextureSettingIndex-data.CurrentTextureSettingIndex);
+            ChangeShadowType(data.CurrentShadowSettingIndex);
+            ChangeShadowResolution(data.CurrentShadowSettingIndex);
         }
 
 
@@ -97,7 +101,24 @@ namespace Studio23.SS2.Settings.Video.Core
         public void ChangeQualitySetting(int qualitySetting)
         {
             QualitySettings.SetQualityLevel(qualitySetting, true);
+            UpdateQualitySettingsData(qualitySetting);
             _postProcessData.UpdatePipelineRenderAsset();
         }
+
+
+        private void UpdateQualitySettingsData(int qualityId)
+        {
+            var defaultData = VideoSettingsManager.Instance.DefaultVideoSettingsData;
+            if(defaultData == null) return;
+
+            var presetData = defaultData.PresetSettingsData.FirstOrDefault(x => x.QualitySettingsIndex == qualityId);
+            if(presetData == null) return;
+
+            ChangeTextureQuality(presetData.TextureSettingsIndex);
+            ChangeShadowResolution(presetData.ShadowSettingsIndex);
+            ChangeShadowType(presetData.ShadowSettingsIndex);
+        }
+
+
     }
 }

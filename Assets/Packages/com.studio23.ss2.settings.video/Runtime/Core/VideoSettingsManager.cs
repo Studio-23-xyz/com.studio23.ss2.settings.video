@@ -16,6 +16,8 @@ namespace Studio23.SS2.Settings.Video.Core
         [SerializeField] private GraphicsConfigurationBase _postProcessConfiguration;
         [SerializeField] private GraphicsConfigurationBase _defaultPostProcessConfiguration;
 
+        public VideoSettingsData DefaultVideoSettingsData;
+
 
         private void Awake()
         {
