@@ -9,7 +9,7 @@ namespace Studio23.SS2.Settings.Video.Core
     public class DisplayController : MonoBehaviour
     {
         private GraphicsConfigurationBase _postProcessData;
-        
+
 
         public void Initialize(GraphicsConfigurationBase graphicsConfiguration)
         {
@@ -18,11 +18,11 @@ namespace Studio23.SS2.Settings.Video.Core
 
         public void ApplySettings(VideoSettingsData data)
         {
+            ChangeScreenMode(data.ScreenModeIndex);
             SetRenderScale(data.RenderScale);
-            ChangeResolution(data.ResolutionIndex);
+            ChangeResolution(GetSupportedResolutions().Length - 1 - data.ResolutionIndex, data.ScreenModeIndex);
             ChangeVSync(data.VSyncCount);
             SetBrightness(data.BrightnessLevel);
-            ChangeFullScreenMode(data.ScreenModeIndex);
         }
 
 
@@ -48,9 +48,10 @@ namespace Studio23.SS2.Settings.Video.Core
         /// Changes The Resolution
         /// </summary>
         /// <param name="resolution"></param>
-        public void ChangeResolution(int resolutionIndex)
+        public void ChangeResolution(int resolutionIndex, int modeIndex = 0)
         {
-            UpdateDisplay(GetSupportedResolutions()[resolutionIndex], Screen.fullScreenMode);
+            var resolution = GetSupportedResolutions()[resolutionIndex];
+            Screen.SetResolution(resolution.width, resolution.height, (FullScreenMode)modeIndex);
         }
 
         /// <summary>
@@ -67,9 +68,9 @@ namespace Studio23.SS2.Settings.Video.Core
         /// Changes Full Screen Mode
         /// </summary>
         /// <param name="fullScreenMode"></param>
-        public void ChangeFullScreenMode(int fullScreenModeIndex)
+        public void ChangeScreenMode(int fullScreenModeIndex)
         {
-            UpdateDisplay(Screen.currentResolution, GetFullScreenModes()[fullScreenModeIndex]);
+            Screen.fullScreenMode = (FullScreenMode)fullScreenModeIndex;
         }
 
 

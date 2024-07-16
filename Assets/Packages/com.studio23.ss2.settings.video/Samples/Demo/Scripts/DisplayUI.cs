@@ -25,7 +25,7 @@ namespace Studio23.SS2.Settings.Video.Samples
             _resolutionstepper.SelectedIndexUpdated.AddListener(_displayController.ChangeResolution);
             
             _displayModeStepper.InitializeData(_displayController.GetFullScreenModes());
-            _displayModeStepper.SelectedIndexUpdated.AddListener(_displayController.ChangeFullScreenMode);
+            _displayModeStepper.SelectedIndexUpdated.AddListener(_displayController.ChangeScreenMode);
             
             _vSyncStepper.InitializeData(new List<string>() { "Off", "On", "Every 2nd V-Blank" });
             _vSyncStepper.SelectedIndexUpdated.AddListener(_displayController.ChangeVSync);
