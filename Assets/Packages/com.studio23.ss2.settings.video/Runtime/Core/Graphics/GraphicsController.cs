@@ -117,6 +117,17 @@ namespace Studio23.SS2.Settings.Video.Core
             ChangeTextureQuality(presetData.TextureSettingsIndex);
             ChangeShadowResolution(presetData.ShadowSettingsIndex);
             ChangeShadowType(presetData.ShadowSettingsIndex);
+            SetTextureFiltering(presetData.TextureSettingsIndex);
+        }
+
+        public void SetTextureFiltering(int currentFilter, int maxFilter = 16)
+        {
+            Texture.SetGlobalAnisotropicFilteringLimits(currentFilter, maxFilter);
+        }
+
+        public void SetAnisotropicFiltering(int currentAnisotropicFilter)
+        {
+            QualitySettings.anisotropicFiltering = (AnisotropicFiltering)currentAnisotropicFilter;
         }
 
 

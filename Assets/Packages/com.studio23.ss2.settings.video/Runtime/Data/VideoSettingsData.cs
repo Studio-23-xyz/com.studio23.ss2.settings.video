@@ -38,6 +38,17 @@ namespace Studio23.SS2.Settings.Video.Data
         public int MaxTextureSettingIndex;
         public int CurrentTextureSettingIndex;
 
+        public int MinTextureFiltering;
+        public int MaxTextureFiltering;
+        public int CurrentTextureFiltering;
+
+
+        [Header("Graphics - Anisotropic Filtering")]
+        public int MinQualityAnisotropicFiltering;
+        public int MaxQualityAnisotropicFiltering;
+        public int CurrentQualityAnisotropicFiltering;
+
+
         [Header("Preset Settings")]
         public List<PresetSettingsData> PresetSettingsData;
         
@@ -91,6 +102,13 @@ namespace Studio23.SS2.Settings.Video.Data
             MaxQualitySettingIndex = data.MaxQualitySettingIndex;
             MinTextureSettingIndex = data.MinTextureSettingIndex;
             MaxTextureSettingIndex = data.MaxTextureSettingIndex;
+            MinTextureFiltering = data.MinTextureFiltering;
+            MaxTextureFiltering = data.MaxTextureFiltering;
+            CurrentTextureFiltering = data.CurrentTextureFiltering;
+            MinQualityAnisotropicFiltering = data.MinQualityAnisotropicFiltering;
+            MaxQualityAnisotropicFiltering = data.MaxQualityAnisotropicFiltering;
+            CurrentQualityAnisotropicFiltering = data.CurrentQualityAnisotropicFiltering;
+
         }
 
     }
@@ -101,6 +119,7 @@ namespace Studio23.SS2.Settings.Video.Data
         public int QualitySettingsIndex;
         public int ShadowSettingsIndex;
         public int TextureSettingsIndex;
+        public int TextureFilteringIndex;
     }
 
 }
