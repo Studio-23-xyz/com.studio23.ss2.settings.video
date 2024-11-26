@@ -6,6 +6,15 @@ namespace Studio23.SS2.Settings.Video.Data
 {
     public abstract class GraphicsConfigurationBase : ScriptableObject
     {
+
+        [SerializeField] protected float _renderScale;
+        [SerializeField] protected bool _ambientOccusionEnabled;
+        [SerializeField] protected bool _bloomEnabled;
+
+        public float GetCurrentRenderScale => _renderScale;
+        public bool  GetCurrentAmbientOcculsion => _ambientOccusionEnabled;
+        public bool GetCurrentBloomEnabled => _bloomEnabled;
+
         protected VolumeProfile CurrentVolumeProfile;
 
         /// <summary>

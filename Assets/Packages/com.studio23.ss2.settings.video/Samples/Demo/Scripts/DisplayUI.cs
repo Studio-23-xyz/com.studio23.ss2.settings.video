@@ -22,7 +22,7 @@ namespace Studio23.SS2.Settings.Video.Samples
         private void InitializeUI()
         {
             _resolutionstepper.InitializeData(_displayController.GetSupportedResolutions(), _displayController.GetSelectedResolutionIndex());
-            _resolutionstepper.SelectedIndexUpdated.AddListener(_displayController.ChangeResolution);
+            _resolutionstepper.SelectedIndexUpdated.AddListener((index)=>_displayController.ChangeResolution(index));
             
             _displayModeStepper.InitializeData(_displayController.GetFullScreenModes());
             _displayModeStepper.SelectedIndexUpdated.AddListener(_displayController.ChangeScreenMode);
